@@ -1,0 +1,96 @@
+.card {
+  max-width: 100%;
+}
+.submit {
+  background-color: #0ad6d6; 
+}
+.location{
+background-color:#a19f9f ;
+}
+.submit,
+.location{
+    color: black;
+    border-radius: 10px;
+    font-size: large;
+}
+.evening {
+  font-size: 130px;
+  margin-top: 45px;
+}
+.time {
+  display: block;
+  border: solid;
+  border-radius: 8px;
+  border-color: #006fff;
+  color: #006fff;
+  padding: 15px;
+  position: relative;
+  top: -20px;
+  right: -10px;
+  font-family: "Open Sans", sans-serif;
+}
+.current-button {
+  background-color: #fff;
+  border-color: #ec3428;
+  color: #ec3428;
+  border: solid;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 18px;
+}
+#searchbar {
+  margin-top: 25px;
+}
+
+.city {
+  font-family: "Oxygen", sans-serif;
+  text-align: center;
+  border: solid;
+  border-radius: 50px;
+  padding: 10px;
+  border-color: #9553ff;
+  color: #9553ff;
+  font-size: 20px;
+  font-weight: bold;
+}
+.col
+{
+  text-align: center;
+  margin: 10px;
+}
+h3 {
+  background-color: #eeeff1;
+  margin: 0 auto;
+  font-family: "Noto Sans JP", sans-serif;
+}
+.tues,
+.wed,
+.thurs,
+.fri,
+.sat {
+  font-family: "Lora", serif;
+}
+.temp {
+  display: block;
+  position: relative;
+  top: 55px;
+}
+.header{
+  color: #eb0707;
+  font-size: 22px;
+  font-family: "Braah One", sans-serif;
+}
+#change-fahren,
+#change-celcius{
+position: relative;
+left: 10px;
+font-size: 15px;  
+}
+
+.today
+{
+  font-weight: bold;
+  font-size: 18px;
+  color: #eb1010d8;
+}
+
