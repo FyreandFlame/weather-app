@@ -3,10 +3,140 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script src="https://kit.fontawesome.com/948485d450.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="Design/weatherupdated.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Braah+One&family=Lora&family=Noto+Sans+JP:wght@600&family=Open+Sans:wght@300;500&family=Oxygen:wght@300&display=swap" rel="stylesheet">
+  <title>Weather App</title>
 </head>
 <body>
+  <div class="container">
+<form id="find-city-form">
+  <input type="search" name="citySearch" id="search-bar" autocomplete="off" autofocus="on" placeholder="Enter city here
+  ">
+<input class="submit" type="submit" value="search" id="find-city"> 
+<input class="location" type="submit" value="Current" id="current-location">
+</form>
+<div class="card" >
+  <div class="card-body">
+    <div class="row">
+      <div class="col"> 
+                <div class = "today" id="time-Update">  <br/></div>
+        <div class = "today" id = "weather-today">
+         </div> 
+       
+  </div>
+  <div class="col-2">
+    <div ></div><div class = "header" id="current-day"></div>
+    <br/>
+    <div class="header" id="current-date"></div>
+  </div>
   
+  <div class="col-2 temp">
+    <h3>
+      <span id="temperature"></span>
+      <span id="change-celcius"> °C 
+  </h3>
+  </div>
+  <div class="col"><i class="fa-solid fa-moon fa-flip-horizontal fa-2xl evening" style="color: #edde35;"></i>
+  </div>
+  
+<div class="row">
+  <div class="col-1"></div>
+  <div class="col-2 tue">
+    <div id="day-one">
+    Tues
+  </div>
+    <br/>
+    <div id="date-one">
+02/05/23 
+</div> 
+  <br/>
+    11°C  
+ <div>
+ <br/>
+    <i class="fa-solid fa-cloud fa-2xl" style="color: #c8c9cb;"></i>
+  </div>
+  </div>
+  <div class="col-2 wed">
+    <div id="day-two">
+    Wed
+  </div>
+    <br/>
+    <div id="date-two">
+    03/05/23
+  </div>
+    <br/>
+    11°C
+    <div>
+      <br/>
+      <i class="fa-solid fa-cloud fa-2xl" style="color: #c8c9cb;"></i>
+       </div>
+       </div>
+  <div class="col-2 thurs">
+    <div id="day-three">
+  Thurs
+</div>
+    <br/>
+    <div id="date-three">
+    04/05/23
+  </div>
+    <br/>
+    8°C
+    <div>
+      <br/>
+         <i class="fa-solid fa-cloud fa-2xl" style="color: #c8c9cb;"></i>
+       </div>
+       </div>
+  <div class="col-2 fri">
+    <div id="day-four">
+    Fri
+  </div>
+    <br/>
+    <div id="date-four">
+    05/05/23
+  </div>
+    <br/>
+    10°C
+    <div>
+      <br/>
+         <i class="fa-solid fa-cloud-rain fa-2xl" style="color: #04bae7;"></i>
+       </div>
+       </div>
+  <div class="col-2 sat">
+    <div id="day-five">
+    Sat
+  </div>
+    <br/>
+    <div id="date-five">
+    06/05/23
+  </div>
+    <br/>
+        12°C
+        <div>
+          <br/>
+          <i class="fa-solid fa-cloud fa-2xl" style="color: #c8c9cb;"></i>
+           </div>
+           </div>
+           <div class="col-1"></div>
+   </div>
+</div>
+<hr/>
+<div class="row">
+  <div class="col"></div>
+  <div class="col">
+    <div class="city" id="cities">
+          </div>
+  </div>
+  <div class="col"></div>
+</div>
+  </div>
+</div>
+  </div>
+  <script src="Design/weatherfunctionupdated.js"></script>
 </body>
 </html>
